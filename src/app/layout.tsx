@@ -1,38 +1,36 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Script from "next/script";
+'use client';
 
-const inter = Inter({ subsets: ["latin"] });
+import {useState, useEffect} from 'react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import '../styles/tailwind.css';
+import {ThemeContext} from './theme';
 
-export const metadata: Metadata = {
-  title: "Anne Mariel",
-  description: "Welcome to my homepage",
-};
+function MainLayout({children}: {children: React.ReactNode}) {
+  const [isDark, setIsDark] = useState(false);
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+  useEffect(() => {
+    const isDarkStored = localStorage.getItem('darkMode') === 'true';
+    setIsDark(isDarkStored);
+  }, []);
+
+  const toggleTheme = () => {
+    const newTheme = !isDark;
+    setIsDark(newTheme);
+    localStorage.setItem('darkMode', String(newTheme));
+  };
+
   return (
-    <html lang="en" className="h-full">
-      <body className={inter.className + " " + "h-full"}>{children}</body>
-      <Script
-        type="text/javascript"
-        strategy="afterInteractive"
-        id="plerdy"
-        data-plerdy_code="1"
-        dangerouslySetInnerHTML={{
-          __html: `var _protocol="https:"==document.location.protocol?"https://":"http://";
-        _site_hash_code = "737d525f84de7123ac33814850a25d5c",_suid=45017, plerdyScript=document.createElement("script");
-        plerdyScript.setAttribute("defer",""),plerdyScript.dataset.plerdymainscript="plerdymainscript",
-        plerdyScript.src="https://d.plerdy.com/public/js/click/main.js?v="+Math.random();
-        var plerdymainscript=document.querySelector("[data-plerdymainscript='plerdymainscript']");
-        plerdymainscript&&plerdymainscript.parentNode.removeChild(plerdymainscript);
-        try{document.head.appendChild(plerdyScript)}catch(t){console.log(t,"unable add script tag")}`,
-        }}
-      ></Script>
+    <html lang="en" className={isDark ? 'dark' : ''}>
+      <ThemeContext.Provider value={{isDark, toggleTheme}}>
+        <body className="min-h-screen flex flex-col bg-neutral-50 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-50 transition-colors">
+          <Header />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </body>
+      </ThemeContext.Provider>
     </html>
   );
 }
+
+export default MainLayout;
