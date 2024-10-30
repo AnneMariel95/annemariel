@@ -40,13 +40,13 @@ export const projects: Project[] = [
   {
     title: "Digital Garden",
     description: "Personal digital garden and knowledge base",
-    link: "https://notes.anne-mariel.com/",
+    link: "https://notes.annemariel.com/",
     type: "interface",
   },
   {
     title: "AI Chatbot",
     description: "Personal AI assistant interface",
-    link: "https://ai.anne-mariel.com/",
+    link: "https://ai.annemariel.com/",
     type: "interface",
   },
 ];
