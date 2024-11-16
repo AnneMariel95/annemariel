@@ -1,5 +1,6 @@
-import {projects} from '@/data/projects';
-import Link from 'next/link';
+import { projects } from "@/data/projects";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -10,12 +11,19 @@ export default function Projects() {
         {/* Featured Projects */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {projects
-            .filter(project => project.type === 'featured')
-            .map(project => (
+            .filter((project) => project.type === "featured")
+            .map((project) => (
               <div
                 key={project.title}
                 className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-transform hover:scale-[1.02]"
               >
+                <Image
+                  alt="Project Photo"
+                  width={480}
+                  height={300}
+                  className="h-48 sm:w-96 object-top bg-top bg-contain object-cover"
+                  src={project.image}
+                />
                 <h3 className="text-xl font-semibold mb-3 dark:text-white">
                   {project.title}
                 </h3>
@@ -56,18 +64,25 @@ export default function Projects() {
         </div>
 
         {/* Other Projects */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div>
             <h3 className="text-xl font-semibold mb-4 dark:text-white">
               Open Source
             </h3>
             {projects
-              .filter(project => project.type === 'open-source')
-              .map(project => (
+              .filter((project) => project.type === "open-source")
+              .map((project) => (
                 <div
                   key={project.title}
                   className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 mb-4"
                 >
+                  <Image
+                    alt="Project Photo"
+                    width={480}
+                    height={300}
+                    className="h-48 sm:w-96 object-top bg-top bg-contain object-cover"
+                    src={project.image}
+                  />
                   <h4 className="font-medium mb-2 dark:text-white">
                     {project.title}
                   </h4>
@@ -92,12 +107,19 @@ export default function Projects() {
               Interfaces
             </h3>
             {projects
-              .filter(project => project.type === 'interface')
-              .map(project => (
+              .filter((project) => project.type === "interface")
+              .map((project) => (
                 <div
                   key={project.title}
                   className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 mb-4"
                 >
+                  <Image
+                    alt="Project Photo"
+                    width={480}
+                    height={300}
+                    className="h-48 sm:w-96 object-top bg-top bg-contain object-cover"
+                    src={project.image}
+                  />
                   <h4 className="font-medium mb-2 dark:text-white">
                     {project.title}
                   </h4>
