@@ -64,7 +64,7 @@ export default function Projects() {
         </div>
 
         {/* Other Projects */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           <div>
             <h3 className="text-xl font-semibold mb-4 dark:text-white">
               Open Source
@@ -74,7 +74,7 @@ export default function Projects() {
               .map((project) => (
                 <div
                   key={project.title}
-                  className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 mb-4"
+                  className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-transform hover:scale-[1.02]"
                 >
                   <Image
                     alt="Project Photo"
@@ -101,17 +101,20 @@ export default function Projects() {
                 </div>
               ))}
           </div>
+        </div>
 
-          <div>
-            <h3 className="text-xl font-semibold mb-4 dark:text-white">
-              Interfaces
-            </h3>
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12"> */}
+        <div>
+          <h3 className="text-xl font-semibold mb-4 dark:text-white">
+            Interfaces
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {projects
               .filter((project) => project.type === "interface")
               .map((project) => (
                 <div
                   key={project.title}
-                  className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 mb-4"
+                  className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-transform hover:scale-[1.02]"
                 >
                   <Image
                     alt="Project Photo"
