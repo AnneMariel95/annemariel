@@ -8,17 +8,6 @@ export const resumeData = {
   },
   experience: [
     {
-      title: "Full Stack Developer",
-      company: "iotcomms.io",
-      period: "Apr 2024 - Present",
-      description: [
-        "Developed several features by creating new APIs and frontend pages",
-        "Enhanced Dev experience standardizing UI components and upgraded dependencies",
-        "Conducted comprehensive backend and frontend testing",
-        "Identified issues and proactively proposed innovative feature enhancements.",
-      ],
-    },
-    {
       title: "Full Stack Java Developer",
       company: "SALT",
       period: "Sep 2023 - Present",
@@ -26,6 +15,17 @@ export const resumeData = {
         "Specialized in full-stack development using React.js and TypeScript for frontend development",
         "Implemented backend solutions using Java and Spring Framework",
         "Practiced Test-Driven Development (TDD) methodology",
+      ],
+    },
+    {
+      title: "Full Stack Developer",
+      company: "iotcomms.io",
+      period: "Apr 2024 - Nov 2024",
+      description: [
+        "Developed several features by creating new APIs and frontend pages",
+        "Enhanced Dev experience standardizing UI components and upgraded dependencies",
+        "Conducted comprehensive backend and frontend testing",
+        "Identified issues and proactively proposed innovative feature enhancements.",
       ],
     },
     {
