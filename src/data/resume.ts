@@ -8,9 +8,18 @@ export const resumeData = {
   },
   experience: [
     {
+      title: "Founder",
+      company: "Catapang AB",
+      period: "Sep 2025 - Present",
+      description: [
+        "One key part of the business is a subscription-based web portal, initially for aquarium businesses, offering an aquarium builder and other specialized services.",
+        "Another key part of the company is web development, creating custom websites, and adding new features to existing sites for the clients.",
+      ],
+    },
+    {
       title: "Full Stack Java Developer",
       company: "SALT",
-      period: "Sep 2023 - Present",
+      period: "Sep 2023 - April 2025",
       description: [
         "Specialized in full-stack development using React.js and TypeScript for frontend development",
         "Implemented backend solutions using Java and Spring Framework",
