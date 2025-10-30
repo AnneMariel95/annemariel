@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default function ContactPage() {
   return (
@@ -40,10 +40,10 @@ export default function ContactPage() {
               </svg>
             </div>
             <a
-              href="mailto:a.mariel.recio.com"
+              href="mailto:a.mariel.recio@gmail.com"
               className="text-lg text-primary-600 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-300 transition-colors"
             >
-              a.mariel.recio.com
+              a.mariel.recio@gmail.com
             </a>
           </div>
 
