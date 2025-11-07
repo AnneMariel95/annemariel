@@ -10,6 +10,13 @@ interface Project {
 
 export const projects: Project[] = [
   {
+    image: "/assets/sabha.png",
+    title: "Sabha",
+    description: "Developed for clients in the healthcare sector",
+    link: "https://sabhahelp.com/",
+    type: "featured",
+  },
+  {
     image: "/assets/asenso.png",
     title: "Asenso",
     description:
