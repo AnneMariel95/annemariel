@@ -97,7 +97,7 @@ function Header() {
         )}
 
         <p className="text-sm mt-2 text-primary-500 dark:text-primary-400 italic">
-          Full-Stack Developer
+          Full Stack Developer
         </p>
       </div>
     </header>
