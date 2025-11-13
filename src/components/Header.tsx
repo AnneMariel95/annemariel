@@ -45,9 +45,9 @@ function Header() {
             <NavLink href="/">Home</NavLink>
             <NavLink href="/resume">Resume</NavLink>
             <NavLink href="/contact">Contact</NavLink>
-            <NavLink href="https://blog.annemariel.com" target="_blank">
+            {/* <NavLink href="https://blog.annemariel.com" target="_blank">
               Blogs
-            </NavLink>
+            </NavLink> */}
             <button
               onClick={toggleTheme}
               className="p-2 rounded-lg bg-primary-100 dark:bg-primary-800 hover:bg-primary-200 dark:hover:bg-primary-700 transition-colors"
@@ -89,9 +89,9 @@ function Header() {
               <NavLink href="/contact" onClick={() => setIsMenuOpen(false)}>
                 Contact
               </NavLink>
-              <NavLink href="https://blog.annemariel.com" target="_blank">
+              {/* <NavLink href="https://blog.annemariel.com" target="_blank">
                 Blogs
-              </NavLink>
+              </NavLink> */}
             </div>
           </nav>
         )}
