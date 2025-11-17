@@ -1,6 +1,6 @@
 export const homeData = {
   hero: {
-    title: "Hi, I'm Anne Mariel",
+    title: "Hi, I'm Anne Mariel!",
     subtitle:
       "As a technology strategist, I bridge the gap between business objectives and technical implementation. I merge a proven track record in business development with a versatile technical skill set, which enables me to create powerful and scalable systems that drive organizational success.",
     emojis: ["\ud83d\udc69\u200d\ud83d\udcbb", "\ud83d\ude80", "\ud83d\udca1"],
