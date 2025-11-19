@@ -4,7 +4,7 @@ export const resumeData = {
     title: "Full-Stack Developer",
     location: "Stockholm, Sweden",
     about:
-      "Full Stack Developer with expertise in React, TypeScript, and Java. Experienced in both frontend and backend development, with a strong foundation in test-driven development (TDD). Proven track record in business development, and stakeholder management across international markets.",
+      "Full Stack Developer with expertise in React, TypeScript, and Java. Experienced in both frontend and backend development, with a strong foundation in test-driven development. Proven track record in business development, and stakeholder management across international markets.",
   },
   experience: [
     {
