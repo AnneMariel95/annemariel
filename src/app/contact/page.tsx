@@ -17,7 +17,7 @@ export default function ContactPage() {
 
         <p className="text-lg mb-8 text-neutral-700 dark:text-neutral-300">
           I'm always excited to connect with fellow developers, potential
-          collaborators, or anyone interested in tech! Feel free to reach out
+          collaborators or anyone interested in tech! Feel free to reach out
           through any of these channels - I'd love to hear from you.
         </p>
 
