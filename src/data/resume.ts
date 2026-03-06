@@ -10,7 +10,7 @@ export const resumeData = {
     {
       title: "Founder",
       company: "Catapang AB",
-      period: "Sep 2025 - Present",
+      period: "Oct 2025 - Present",
       description: [
         "One key part of the business is a subscription-based web portal, initially for aquarium businesses, offering an aquarium builder and other specialized services.",
         "Another key part of the company is web development, creating custom websites, and adding new features to existing sites for the clients.",
